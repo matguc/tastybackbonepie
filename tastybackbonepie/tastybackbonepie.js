@@ -91,7 +91,7 @@
                                 entries: entries.models
                             });
                             that.$el.trigger(e);
-                            var t = _.template(self.tableTemplate, {
+                            var t = _.template(self.tableTemplate)( {
                                 id: self.uid,
                                 fields: self.fields, 
                                 additional_html_fields: self.additionalHtmlFields,
